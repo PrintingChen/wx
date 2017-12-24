@@ -1,0 +1,258 @@
+@r: 40rem;
+@media screen and (min-width: 319px) {
+  html {
+    font-size: 17.0667px;
+  }
+}
+@media screen and (min-width: 359px) {
+  html {
+    font-size: 19.2px;
+  }
+}
+@media screen and (min-width: 375px) {
+  html {
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 383px) {
+  html {
+    font-size: 20.43px;
+  }
+}
+@media screen and (min-width: 399px) {
+  html {
+    font-size: 21.28px;
+  }
+}
+@media screen and (min-width: 414px) {
+  html {
+    font-size: 22.08px;
+  }
+}
+@media screen and (min-width: 423px) {
+  html {
+    font-size: 22.56px;
+  }
+}
+@media screen and (min-width: 479px) {
+  html {
+    font-size: 25.55px;
+  }
+}
+@media screen and (min-width: 539px) {
+  html {
+    font-size: 28.75px;
+  }
+}
+@media screen and (min-width: 639px) {
+  html {
+    font-size: 34.08px;
+  }
+}
+@media screen and (min-width: 640px) {
+  html {
+    font-size: 34.13px;
+  }
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+#select-time{
+    background: #fff;
+
+    .content{
+       padding: 28/@r 24/@r 0 24/@r;
+
+       .select-box{
+          overflow: hidden;
+
+          .select-item{
+              float: left;
+              width: 338/@r;
+              height: 338/@r;
+              border: 1px solid #d8d8d8;
+              border-radius: 10/@r;
+              margin-bottom: 35/@r;
+
+              .sbg{
+                  position: relative;
+                  width: 334/@r;
+                  height: 270/@r;
+                  box-sizing: border-box;
+                  color: #fff;
+                  padding-left: 32/@r;
+
+                  span{
+                      position: relative;
+                      display: inline-block;
+                  }
+
+                  span:nth-child(1){
+                      font-size: 112/@r;
+                  }
+                  span:nth-child(2){
+                      font-size: 32/@r;
+                      top: -14/@r;
+                      left: 14/@r;
+                  }
+              }
+
+              .price{
+                  margin: 0;
+                  height: 68/@r;
+                  line-height: 68/@r;
+                  font-size: 32/@r;
+                  color: #333;
+                  box-sizing: border-box;
+                  padding-left: 28/@r;
+
+                  span{
+                      margin-right: 10/@r;
+                  }
+              }
+          }
+
+
+
+          .select-item:nth-child(odd){
+              margin-right: 24/@r;
+          }
+
+          .select-item:nth-child(1){
+              .sbg{
+                  background: url(./../images/15.png) no-repeat;
+                  background-size: cover;
+                  border-radius: 8/@r 8/@r 0 0;
+                  margin: 0 auto;
+
+                  &.active{
+                      background: url(./../images/15ed.png) no-repeat;
+                      background-size: cover;
+                      border-radius: 8/@r 8/@r 0 0;
+                      margin: 0 auto;
+                  }
+              }
+          }
+
+          .select-item:nth-child(2){
+              .sbg{
+                  background: url(./../images/30.png) no-repeat;
+                  background-size: cover;
+                  border-radius: 8/@r 8/@r 0 0;
+                  margin: 0 auto;
+
+                  &.active{
+                      background: url(./../images/30ed.png) no-repeat;
+                      background-size: cover;
+                      border-radius: 8/@r 8/@r 0 0;
+                      margin: 0 auto;
+                  }
+              }
+          }
+
+          .select-item:nth-child(3){
+              .sbg{
+                  background: url(./../images/60.png) no-repeat;
+                  background-size: cover;
+                  border-radius: 8/@r 8/@r 0 0;
+                  margin: 0 auto;
+
+                  &.active{
+                      background: url(./../images/60ed.png) no-repeat;
+                      background-size: cover;
+                      border-radius: 8/@r 8/@r 0 0;
+                      margin: 0 auto;
+                  }
+              }
+          }
+       }
+
+       .btn-box{
+            margin-top: 60/@r;
+
+            .submit{
+
+              display: block;
+              width: 520/@r;
+              height: 98/@r;
+              margin: 0 auto;
+              line-height: 98/@r;
+              text-align: center;
+              font-size: 32/@r;
+              color: #fff;
+              background-color: #e24e38;
+              border-radius: 12/@r;
+              outline: none;
+              border: 0;
+              box-shadow: 0 6/@r 30/@r #e24e38;
+
+              &.disabled{
+                  background-color: #bebebe;
+                  box-shadow: 0 0.15rem 0.75rem #bebebe;
+
+              }
+            }
+       }
+    }
+}
+
+.popup-select {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 10000;
+  display: none;
+
+  .content-block {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      position: relative;
+
+      .popup-wrapper {
+          width: 710/@r;
+          height: 388/@r;
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+          background-color: #fff;
+          box-sizing: border-box;
+          padding-bottom: 0rem;
+          padding-top: 40/@r;
+          border-radius: 0.25rem;
+
+          .fail{
+              width: 151/@r;
+              height: 151/@r;
+              position: relative;
+              left: 50%;
+              transform: translateX(-50%);
+              display: block;
+              margin: 0;
+          }
+
+          p{
+              margin: 0;
+              text-align: center;
+              font-size: 32/@r;
+          }
+
+          p:nth-of-type(1){
+              color: #666;
+              padding-bottom: 32/@r;    
+              padding-top: 14/@r;
+          }
+
+          p:nth-of-type(2){
+              height: 104/@r;
+              line-height: 104/@r;
+              color: #333;
+          }
+      }
+  }
+}

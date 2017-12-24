@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html style="position:relative; height: 100%;overflow:hidden;">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>时长选择</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" href="./css/sm.min.css">
+    <link rel="stylesheet" href="./css/sm-extend.min.css">
+    <link rel="stylesheet" href="./css/select-time.css">
+  </head>
+  <body style="height: 100%;overflow:hidden;position:relative;">
+
+    <div class="popup-select">
+        <div class="content-block">
+            <div class="popup-wrapper">
+                <img src="./images/fail.png" class="fail">
+                <p>支付失败，请重新支付</p>
+                <p class="know">我知道了</p>
+            </div> 
+        </div>
+    </div>
+
+    <div class="page page-current" id='select-time'>
+        <div class="content">
+            <div class="select-box">
+                <div class="select-item" data-type="15">
+                    <div class="sbg">
+                        <span>15</span>
+                        <span>分钟</span>
+                    </div>
+                    <p class="price"><span>¥</span>10</p>
+                </div>
+                <div class="select-item" data-type="30">
+                    <div class="sbg">
+                        <span>30</span>
+                        <span>分钟</span>
+                    </div>
+                    <p class="price"><span>¥</span>15</p>
+                </div>
+                <div class="select-item" data-type="60">
+                    <div class="sbg">
+                        <span>60</span>
+                        <span>分钟</span>
+                    </div>
+                    <p class="price"><span>¥</span>20</p>
+                </div>
+            </div>
+            <div class="btn-box">
+                <button class="submit disabled" disabled="disabled">提交订单</button>
+            </div>
+        </div>
+    </div>
+
+    <script type='text/javascript' src='./js/zepto.min.js' charset='utf-8'></script>
+    <script type='text/javascript' src='./js/sm.min.js' charset='utf-8'></script>
+    <script type='text/javascript' src='./js/sm-extend.min.js' charset='utf-8'></script>
+    <script type="text/javascript" src="./js/select-time.js"></script>
+  </body>
+</html>
